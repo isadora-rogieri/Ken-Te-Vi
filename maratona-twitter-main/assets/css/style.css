@@ -1,0 +1,112 @@
+/* Estrutura do CSS (folha de estilo em cascata)
+    seletor = seleciona quem vai ser estilizado.
+    {} dentro das chaves que indicamos os estilos
+    propriedade = estilo que vamos adicionar (cor, cor de fundo)
+    : valor ;
+    ex: 
+    seletor {
+        cor: azul;
+    }
+*/
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.conteiner{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.cabeçalho{
+    flex-basis: 30%;
+}
+.cabecalho__logo{
+    margin-bottom: 50px;
+}
+
+.cabeçalho__logo img{}
+.cabecalho__logo figcaption{
+    display: none;
+}
+
+.cabeçalho__menuNavegação{}
+.cabeçalho__menuLista{}
+.cabeçalho__menuItem{
+    margin-bottom: 25px;
+}
+.cabeçalho__menuItem img {
+    max-width: 26px;
+}
+
+.cabeçalho__menuItem a{
+    color: #000;
+    text-decoration: none;
+    font-size: 22px;
+    vertical-align: top;
+}
+
+.conteudoPrincpal{
+    flex-basis: 70%;
+    border-left: 1px solid #e7ecf0;
+    border-right: 1px  solid #e7ecf0;
+}
+.conteudoPrincpal__titulo{
+    padding: 10px 30px;
+}
+
+.conteudoPrincpal__formulario{
+    padding: 10px 30px;
+    border-top: 1px solid #e7ecf0;
+    border-bottom: 10px solid #e7ecf0;
+    text-align: right;
+}
+.conteudoPrincpal__formulario textarea {
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    height: 55px;
+}
+.conteudoPrincpal__formulario button {
+    background-color: #1da1f2;
+    border: none;
+    padding: 8px 20px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.conteudoPrincpal__feed{}
+.conteudoPrincpal__listaTweets{
+    display: flex;
+    flex-flow: column-reverse nowrap;
+}
+.conteudoPrincpal__tweet{
+    padding: 20px 32px;
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid #e7ecf0;
+}
+
+.tweet__fotoPerfil{}
+.tweet__conteudo{
+    margin-left: 15px;
+}
+.tweet__conteudo h2{
+    display: inline-block;
+}
+.tweet__conteudo span{
+    display: inline-block;
+    color: #828282;
+}
+.tweet__conteudo p{
+    margin-top: 15px;
+    color: #333333;
+}
+
+
+
+
